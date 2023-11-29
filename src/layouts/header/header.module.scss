@@ -1,0 +1,17 @@
+.header {
+    background-color: royalblue;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__clear {
+    padding: 4px 6px;
+    color: white;
+    background-color: gray;
+    display: inline;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 8px;
+}
