@@ -52,6 +52,9 @@
             font-weight: 500;
             line-height: 150%; /* 21px */
             letter-spacing: -0.28px;
+            &::-webkit-search-cancel-button,::-webkit-search-results-button,::-webkit-search-results-decoration,::-webkit-search-decoration {
+                display: none;
+            }
         }
         &__searchIcon {
             width: 24px;

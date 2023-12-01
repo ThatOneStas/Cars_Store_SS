@@ -20,33 +20,35 @@ const Footer = () => {
             <h1>About</h1>
             <ul>
               <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
+              <li><Link href={"/"}>Featured</Link></li>
+              <li><Link href={"/"}>Partnership</Link></li>
+              <li><Link href={"/"}>Bussiness Relation</Link></li>
             </ul>
           </div>
           <div className={`${s.footer__main_box} ${s.community}`}>
             <h1>Community</h1>
             <ul>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
+              <li><Link href={"/"}>Events</Link></li>
+              <li><Link href={"/"}>Blog</Link></li>
+              <li><Link href={"/"}>Podcast</Link></li>
+              <li><Link href={"/"}>Invite a friend</Link></li>
             </ul>
           </div>
           <div className={`${s.footer__main_box} ${s.socials}`}>
             <h1>Socials</h1>
             <ul>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>How it works</Link></li>
+              <li><Link href={"/"}>Discord</Link></li>
+              <li><Link href={"/"}>Instagram</Link></li>
+              <li><Link href={"/"}>Twitter</Link></li>
+              <li><Link href={"/"}>Facebook</Link></li>
             </ul>
           </div>
         </div>
         <div className={s.footer__line}></div>
         <div className={s.footer__sub}>
-
+          <h2>©2022 MORENT. All rights reserved</h2>
+          <Link href={"/"}><h2>Privacy & Policy</h2></Link>
+          <Link href={"/"}><h2>Terms & Condition</h2></Link>
         </div>
       </footer>
     </>

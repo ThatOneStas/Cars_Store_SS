@@ -92,5 +92,41 @@
             background: rgba(19, 19, 19, 0.16);     
             margin: 36px 0px;
         }
+        &__sub {
+            display: flex;
+            & h2 {
+                color: $--secondary-color;
+
+                /* Semibold/Type@16 */
+                font-family: $--primary-font-family;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 24px */
+                letter-spacing: -0.32px;
+                margin: 0;
+            }
+            & a {
+                text-decoration: none;
+                & h2 {
+                    color: $--secondary-color;
+                    text-align: right;
+                    
+                    /* Semibold/Type@16 */
+                    font-family: $--primary-font-family;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 24px */
+                    letter-spacing: -0.32px;
+                }
+            }
+            & :nth-child(2){
+                margin-left: auto;
+            }
+            & :nth-child(3){
+                margin-left: 60px;
+            }
+        }
     }
 }
