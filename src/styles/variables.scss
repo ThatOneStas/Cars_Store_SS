@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 // colors
-$--primary-font-color: black;
-$--secondary-font-color: #999999;
-$--accent-font-color: #405EFF;
-$--active-font-color: #FFFFFF;
+$--primary-color: #3563E9;
+$--primary-0-color: #FFF;
 
+$--secondary-color: #1A202C;
+$--secondary-0-color: #90A3BF;
+$--secondary-1-color: rgba(19, 19, 19, 0.60);
+
+
+$--accent-color: #54A6FF;
 // fonts
-$--primary-font-family: 'Roboto', sans-serif;
+$--primary-font-family: 'Plus Jakarta Sans', sans-serif;
