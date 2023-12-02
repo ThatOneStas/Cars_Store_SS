@@ -3,15 +3,19 @@ import Head from 'next/head'
 import s from '@/styles/Home.module.scss'
 // components
 import Filter from '@/components/filter'
+import Card from "@/components/card"
 // link
 import Link from 'next/link'
 // images
 import Image from 'next/image'
 import Car_ad from "@/assets/img/image 7.png"
 import Car_ad_2 from "@/assets/img/image 8.png"
+// product list
+import Products_json from "@/modules/server/products/products.json"
 
 
 export default function Home() {
+  console.log(Products_json)
   return (
     <>
       <Head>
@@ -36,6 +40,22 @@ export default function Home() {
           </div>
         </section>
         <Filter></Filter>
+        <section className={s.list}>
+          <div className={s.list__top}>
+            <h1>Popular</h1>
+            <Link href={"/"}>View all</Link>
+          </div>
+          <div className={s.list__items}>
+          {
+            Products_json.map((product:any)=>{
+              return(
+                <Card product_data={product}></Card>
+              )
+            })
+          }
+          </div>
+          <button>Show more</button>
+        </section>
       </main>
     </>
   )

@@ -11,7 +11,7 @@ const filter = () => {
     <div className={s.filter}>
         <div className={s.filter__box}>
             <div className={s.filter__box_toggle}>
-                <input type="radio" />
+                <input type="radio" name="radio"/>
                 <label>Pick - Up</label>
             </div>
             <div className={s.filter__box_row}>
@@ -49,7 +49,7 @@ const filter = () => {
         <button className={s.filter__btn}><Image src={Swap} alt='swap-icon'></Image></button>
         <div className={s.filter__box}>
             <div className={s.filter__box_toggle}>
-                <input type="radio" />
+                <input type="radio" name="radio"/>
                 <label>Drop - Off</label>
             </div>
             <div className={s.filter__box_row}>

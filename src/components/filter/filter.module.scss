@@ -3,6 +3,8 @@
 @media (max-width: 1600px) {
     .filter {
         width: 100%;
+        padding: 0px 64px;
+        box-sizing: border-box;
         height: fit-content;
         display: flex;
         justify-content: center;

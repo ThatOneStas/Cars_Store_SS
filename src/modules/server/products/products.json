@@ -1,0 +1,124 @@
+[
+    {
+        "name":"Land Rover Range Rover Evoque 2016",
+        "photos":{
+            "main":"@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png"
+        },
+        "location":"Lviv",
+        "price":26000,
+        "run":86000,
+        "id":1
+        },
+    {
+        "name":"Tesla Model S",
+        "photos":{
+            "main":""
+        },
+        "location":"Odessa",
+        "price":56000,
+        "id":2
+    },
+    {
+        "name":"Volkswagen ID.4 Crozz 2023",
+        "photos":{
+            "main":""
+        },
+        "location":"Kyiv",
+        "price":29500,
+        "id":3
+    },
+    {
+        "name":"Ford Edge 2022",
+        "photos":{
+            "main":""
+        },
+        "location":"Kyiv",
+        "price":34490,
+        "run":46000,
+        "id":4
+    },
+    {
+        "name":"Nissan Patrol 2011",
+        "photos":{
+            "main":""
+        },
+        "location":"Lutsk",
+        "price":24500,
+        "run":139000,
+        "id":5
+    },
+    {
+        "name":"Audi A8 2013",
+        "photos":{
+            "main":""
+        },
+        "location":"Kyiv",
+        "price":27250,
+        "run":126000,
+        "id":6
+    },
+
+
+
+
+
+
+    {
+        "name":"Land Rover Range Rover Evoque 2016",
+        "photos":{
+            "main":"@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png"
+        },
+        "location":"Lviv",
+        "price":26000,
+        "run":86000,
+        "id":7
+        },
+    {
+        "name":"Tesla Model S",
+        "photos":{
+            "main":""
+        },
+        "location":"Odessa",
+        "price":56000,
+        "id":8
+    },
+    {
+        "name":"Volkswagen ID.4 Crozz 2023",
+        "photos":{
+            "main":""
+        },
+        "location":"Kyiv",
+        "price":29500,
+        "id":9
+    },
+    {
+        "name":"Ford Edge 2022",
+        "photos":{
+            "main":""
+        },
+        "location":"Kyiv",
+        "price":34490,
+        "run":46000,
+        "id":10
+    },
+    {
+        "name":"Nissan Patrol 2011",
+        "photos":{
+            "main":""
+        },
+        "location":"Lutsk",
+        "price":24500,
+        "run":139000,
+        "id":11
+    },
+    {
+        "name":"Audi A8 2013",
+        "photos":{
+            "main":""
+        },
+        "location":"Kyiv",
+        "price":27250,
+        "run":126000,
+        "id":12
+    }
+]
