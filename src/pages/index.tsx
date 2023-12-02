@@ -1,10 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
-import styles from '@/styles/Home.module.scss'
+import s from '@/styles/Home.module.scss'
+// components
+import Filter from '@/components/filter'
 // link
 import Link from 'next/link'
 // images
 import Image from 'next/image'
+import Car_ad from "@/assets/img/image 7.png"
+import Car_ad_2 from "@/assets/img/image 8.png"
 
 
 export default function Home() {
@@ -17,7 +21,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
+        <section className={s.hero}>
+          <div className={s.hero__ad}>
+            <h1>The Best Platform for Car Rental</h1>
+            <h2>Ease of doing a car rental safely and reliably. Of course at a low price.</h2>
+            <Link href={"/"}>Rental Car</Link>
+            <Image src={Car_ad} alt='Car-img'></Image>
+          </div>
+          <div className={s.hero__ad}>
+            <h1>Easy way to rent a car at a low price</h1>
+            <h2>Providing cheap car rental services and safe and comfortable facilities.</h2>
+            <Link href={"/"}>Rental Car</Link>
+            <Image src={Car_ad_2} alt='Car-img'></Image>
+          </div>
+        </section>
+        <Filter></Filter>
       </main>
     </>
   )
