@@ -162,24 +162,45 @@
         padding: 0px 82px;
         box-sizing: border-box;
         margin: 42px 0px 64px 0px;
-        & button {
-            padding: 10px 20px;
-            border-radius: 4px;
-            background: $--primary-color;
-            color: $--primary-0-color;
-            text-align: center;
-            
-            /* Semibold/Type@16 */
-            font-family: $--primary-font-family;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 150%; /* 24px */
-            letter-spacing: -0.32px;
-            border: none;
-            transition: 0.2s;
-            &:hover {
-                background: #2e53c1;
+        &__bottom {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & button {
+                margin: 0 auto;
+                padding: 10px 20px;
+                border-radius: 4px;
+                background: $--primary-color;
+                color: $--primary-0-color;
+                text-align: center;
+                
+                /* Semibold/Type@16 */
+                font-family: $--primary-font-family;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 24px */
+                letter-spacing: -0.32px;
+                border: none;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover {
+                    background: #2e53c1;
+                }
+            }
+            & h2 {
+                margin: 0;
+                color: $--secondary-0-color;
+                text-align: right;
+                
+                /* Medium/Type@14 */
+                font-family: $--primary-font-family;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 21px */
+                letter-spacing: -0.28px;
             }
         }
         &__top {
@@ -234,6 +255,22 @@
                 border-radius: 10px;   
                 background: #E9EBEF;        
             }
+        }
+        &__error {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $--primary-color;
+
+            /* Bold/Type@32 */
+            font-family: $--primary-font-family;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 48px */
+            letter-spacing: -0.96px;
         }
     }
 }

@@ -1,8 +1,15 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 import s from "../product/single.module.scss"
+// link
+import Link from 'next/link'
+// images
+import Image from 'next/image'
 
 const singleProduct = () => {
+  const router = useRouter()
+  console.log(router)
   return (
     <>
       <Head>
@@ -12,7 +19,7 @@ const singleProduct = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
+        d
       </main>
     </>
   )

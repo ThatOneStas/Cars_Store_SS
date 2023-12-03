@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Location from "@/assets/img/Location.png"
 import Test from "@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png"
+import Heart from "@/assets/img/heart_card.svg"
 // product list
 import Products_json from "@/modules/server/products/products.json"
 
@@ -37,6 +38,10 @@ const card = ({product_data} : Props) => {
               }
               </h2>
             <span>{product_data.price} $</span>
+        </div>
+        <div className={s.card__detail}>
+          <Link href={`/product/${product_data}`}>Detail</Link>
+          <Image src={Heart} alt="heart-icon"></Image>
         </div>
     </div>
   )
