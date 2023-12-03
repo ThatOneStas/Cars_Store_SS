@@ -4,7 +4,9 @@
     .hero {
         display: flex;
         justify-content: space-between;
-        margin: 32px 82px;
+        margin: 32px 0px;
+        padding: 0px 82px;
+        box-sizing: border-box;
         &__ad {
             width: 640px;
             height: 360px;
@@ -191,6 +193,7 @@
             }
             & h2 {
                 margin: 0;
+                margin-right: 18px;
                 color: $--secondary-0-color;
                 text-align: right;
                 
@@ -201,6 +204,7 @@
                 font-weight: 500;
                 line-height: 150%; /* 21px */
                 letter-spacing: -0.28px;
+                user-select: none;
             }
         }
         &__top {

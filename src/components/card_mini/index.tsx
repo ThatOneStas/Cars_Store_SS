@@ -1,5 +1,5 @@
 import React from 'react'
-import s from "../card/card.module.scss"
+import s from "../card_mini/card_mini.module.scss"
 // link
 import Link from 'next/link'
 // images
@@ -26,23 +26,12 @@ const card = ({product_data} : Props) => {
   return (
     <div className={s.card}>
         <Image className={s.card__img} src={Test} alt="product-photo"></Image>
-        <div className={s.card__line}></div>
         <div className={s.card__info}>
             <h1>{product_data.name}</h1>
-            <div className={s.card__info_location}>
-                <Image src={Location} alt='location-icon'></Image>
-                <p>{product_data.location}</p>
-            </div>
-            <h2>
-              {
-                product_data.run ? `${product_data.run} km.` : "No run."
-              }
-              </h2>
             <span>{product_data.price} $</span>
         </div>
         <div className={s.card__detail}>
           <Link href={`/product/${product_data}`}>Detail</Link>
-          <Image src={Heart} alt="heart-icon"></Image>
         </div>
     </div>
   )
