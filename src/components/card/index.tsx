@@ -11,15 +11,19 @@ import Heart from "@/assets/img/heart_card.svg"
 import Products_json from "@/modules/server/products/products.json"
 
 interface Props {
-    product_data:{
-      name:string,
-      img:string,
-      location:string,
-      mark:string,
-      price:number,
-      run:number,
-      id:number
-    }
+  product_data:{
+    name:string,
+    photos:[{
+      main:string,
+      second:string,
+      third:string
+    }],
+    location:string,
+    mark:string,
+    price:number,
+    run:number,
+    id:number
+  }
 }
 
 const card = ({product_data} : Props) => {

@@ -1,9 +1,11 @@
 [
     {
         "name":"Land Rover Range Rover Evoque 2016",
-        "photos":{
-            "main":"@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png"
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Lviv",
         "mark": "Range Rover",
         "price":26000,
@@ -12,9 +14,11 @@
         },
     {
         "name":"Tesla Model S",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Odessa",
         "mark": "Tesla",
         "price":56000,
@@ -22,9 +26,11 @@
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Kyiv",
         "mark": "Volkswagen",
         "price":29500,
@@ -32,9 +38,11 @@
     },
     {
         "name":"Ford Edge 2022",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Kyiv",
         "mark": "Ford",
         "price":34490,
@@ -43,9 +51,11 @@
     },
     {
         "name":"Nissan Patrol 2011",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Lutsk",
         "mark": "Nissan",
         "price":24500,
@@ -54,9 +64,11 @@
     },
     {
         "name":"Audi A8 2013",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Kyiv",
         "mark": "Audi",
         "price":27250,
@@ -71,66 +83,78 @@
 
     {
         "name":"Land Rover Range Rover Evoque 2016",
-        "photos":{
-            "main":"@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png"
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Lviv",
         "mark": "Range Rover",
         "price":26000,
         "run":86000,
-        "id":1
+        "id":7
         },
     {
         "name":"Tesla Model S",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Odessa",
         "mark": "Tesla",
         "price":56000,
-        "id":2
+        "id":8
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Kyiv",
         "mark": "Volkswagen",
         "price":29500,
-        "id":3
+        "id":9
     },
     {
         "name":"Ford Edge 2022",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Kyiv",
         "mark": "Ford",
         "price":34490,
         "run":46000,
-        "id":4
+        "id":10
     },
     {
         "name":"Nissan Patrol 2011",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Lutsk",
         "mark": "Nissan",
         "price":24500,
         "run":139000,
-        "id":5
+        "id":11
     },
     {
         "name":"Audi A8 2013",
-        "photos":{
-            "main":""
-        },
+        "photos":[{
+            "main":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "second":"https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "third":"https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        }],
         "location":"Kyiv",
         "mark": "Audi",
         "price":27250,
         "run":126000,
-        "id":6
+        "id":12
     }
 ]
