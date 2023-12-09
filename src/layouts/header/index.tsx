@@ -25,22 +25,22 @@ const header = () => {
       </div>
       <nav className={s.header__nav}>
         <ul>
-          <li>
+          <li className={s.fav}>
             <Link href={"/favourite"}>
               <Image src={Heart} alt='heart-icon'></Image>
             </Link>
           </li>
-          <li>
+          <li className={s.notif}>
             <Link href={"/"}>
               <Image src={Bell} alt='Bell-icon'></Image>
             </Link>
           </li>
-          <li>
+          <li className={s.setting}>
             <Link href={"/"}>
               <Image src={Settings} alt='Settings-icon'></Image>
             </Link>
           </li>
-          <li>
+          <li className={s.user}>
             <Link href={"/"}>
               <Image className={s.header__nav_userImg} src={User} alt='Profile-icon'></Image>
             </Link>

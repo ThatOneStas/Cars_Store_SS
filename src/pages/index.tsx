@@ -15,7 +15,6 @@ import Products_json from "@/modules/server/products/products.json"
 
 
 export default function Home() {
-  console.log(Products_json)
   return (
     <>
       <Head>

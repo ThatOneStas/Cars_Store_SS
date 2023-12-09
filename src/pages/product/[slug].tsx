@@ -16,7 +16,8 @@ import Products_json from "@/modules/server/products/products.json"
 
 const singleProduct = () => {
   const router = useRouter()
-  console.log(router)
+  const URLdata = router.query
+  console.log(URLdata.name)
   return (
     <>
       <Head>

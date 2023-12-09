@@ -16,7 +16,8 @@ const Footer = () => {
               Our vision is to provide convenience and help increase your sales business.
             </h2>
           </div>
-          <div className={`${s.footer__main_box} ${s.about}`}>
+          <div className={`${s.footer__main_box} ${s.container}`}>
+          <div className={`${s.footer__main_box}`}>
             <h1>About</h1>
             <ul>
               <li><Link href={"/"}>How it works</Link></li>
@@ -25,23 +26,24 @@ const Footer = () => {
               <li><Link href={"/"}>Bussiness Relation</Link></li>
             </ul>
           </div>
-          <div className={`${s.footer__main_box} ${s.community}`}>
-            <h1>Community</h1>
-            <ul>
-              <li><Link href={"/"}>Events</Link></li>
-              <li><Link href={"/"}>Blog</Link></li>
-              <li><Link href={"/"}>Podcast</Link></li>
-              <li><Link href={"/"}>Invite a friend</Link></li>
-            </ul>
-          </div>
-          <div className={`${s.footer__main_box} ${s.socials}`}>
-            <h1>Socials</h1>
-            <ul>
-              <li><Link href={"/"}>Discord</Link></li>
-              <li><Link href={"/"}>Instagram</Link></li>
-              <li><Link href={"/"}>Twitter</Link></li>
-              <li><Link href={"/"}>Facebook</Link></li>
-            </ul>
+            <div className={`${s.footer__main_box}`}>
+              <h1>Community</h1>
+              <ul>
+                <li><Link href={"/"}>Events</Link></li>
+                <li><Link href={"/"}>Blog</Link></li>
+                <li><Link href={"/"}>Podcast</Link></li>
+                <li><Link href={"/"}>Invite a friend</Link></li>
+              </ul>
+            </div>
+            <div className={`${s.footer__main_box}`}>
+              <h1>Socials</h1>
+              <ul>
+                <li><Link href={"/"}>Discord</Link></li>
+                <li><Link href={"/"}>Instagram</Link></li>
+                <li><Link href={"/"}>Twitter</Link></li>
+                <li><Link href={"/"}>Facebook</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className={s.footer__line}></div>

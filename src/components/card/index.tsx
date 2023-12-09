@@ -7,6 +7,9 @@ import Image from 'next/image'
 import Location from "@/assets/img/Location.png"
 import Test from "@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png"
 import Heart from "@/assets/img/heart_card.svg"
+// redux
+import { useSelector, useDispatch } from 'react-redux'
+import { locateItem } from '@/redux/features/favourite'
 // product list
 import Products_json from "@/modules/server/products/products.json"
 
@@ -27,6 +30,7 @@ interface Props {
 }
 
 const card = ({product_data} : Props) => {
+  const dispatch = useDispatch()
   return (
     <div className={s.card}>
         <Image className={s.card__img} src={Test} alt="product-photo"></Image>
@@ -46,7 +50,7 @@ const card = ({product_data} : Props) => {
         </div>
         <div className={s.card__detail}>
           <Link href={`/product/${product_data}`}>Detail</Link>
-          <Image src={Heart} alt="heart-icon"></Image>
+          <Image onClick={() => dispatch(locateItem(product_data.id))} src={Heart} alt="heart-icon"></Image>
         </div>
     </div>
   )
