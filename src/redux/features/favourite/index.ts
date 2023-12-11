@@ -2,42 +2,37 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface cartState {
-    fav_list: any[];
+  fav_list: any[];
 }
-  
+
 const initialState: cartState = {
-    fav_list: [],
+  fav_list: [],
 };
 
-// if(localStorage.getItem("favourite_list")===null){
-//   fav_list = localStorage.getItem("favourite_list")
-// }
-// else {
-  
-// }
-let test : any = Array([1,2,3,4,5])
+let test: any = Array([1, 2, 3, 4, 5]);
 
-
-export const favourite  = createSlice({
-name: "cart",
+export const favourite = createSlice({
+  name: "favorite",
   initialState,
   reducers: {
-    locateItem: (state, ItemID) => {
-        const id = ItemID.payload
-        state.fav_list.map((list_id:number)=>{
-          if(id==list_id){
-            state.fav_list.splice(state.fav_list.indexOf(id),1)
-          }
-          else{
-            state.fav_list.push(id)
-          }
-        })
-        localStorage.setItem("Test",test)
-        console.log(test)
-    }
-}});
+    changeFavoriteList: (state, ItemID) => {
+      const id = ItemID.payload;
+      let favList = state.fav_list;
+      const isFavorite = state.fav_list.indexOf(id);
+
+      if (isFavorite >= 0) {
+        favList.splice(isFavorite, 1);
+      } else {
+        favList.push(id);
+      }
+
+      state.fav_list = favList;
+      localStorage.setItem("Test", JSON.stringify(favList));
+    },
+  },
+});
 
 // export reducer
-export const { locateItem } = favourite.actions;
+export const { changeFavoriteList } = favourite.actions;
 // export slice
-export default favourite.reducer
+export default favourite.reducer;
