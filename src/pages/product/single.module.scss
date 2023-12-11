@@ -218,6 +218,9 @@
                 height: 100%;
                 border-radius: 5px;
             }
+            & .swiper-button-next::after {
+                width: 100px;
+            }
         }
         &__line {
             width: 1px;
@@ -417,6 +420,7 @@
                 height: 260px;
                 border-radius: 5px;
             }
+            
         }
         &__line {
             display: none;

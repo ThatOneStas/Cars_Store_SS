@@ -25,7 +25,8 @@ interface Props {
     mark:string,
     price:number,
     run:number,
-    id:number
+    id:number,
+    owner: string
   }
 }
 
@@ -49,6 +50,7 @@ const card = ({product_data} : Props) => {
             <span>{product_data.price} $</span>
         </div>
         <div className={s.card__detail}>
+          {/* <Link href={{ pathname: "/product/", query: { object: JSON.stringify(product_data) } }}>Detail</Link> */}
           <Link href={`/product/${product_data}`}>Detail</Link>
           <Image onClick={() => dispatch(locateItem(product_data.id))} src={Heart} alt="heart-icon"></Image>
         </div>

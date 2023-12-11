@@ -10,7 +10,8 @@
         "mark": "Range Rover",
         "price":26000,
         "run":86000,
-        "id":1
+        "id":1,
+        "owner": "Person 1"
         },
     {
         "name":"Tesla Model S",
@@ -22,7 +23,8 @@
         "location":"Odessa",
         "mark": "Tesla",
         "price":56000,
-        "id":2
+        "id":2,
+        "owner": "Person 2"
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
@@ -34,7 +36,8 @@
         "location":"Kyiv",
         "mark": "Volkswagen",
         "price":29500,
-        "id":3
+        "id":3,
+        "owner": "Person 3"
     },
     {
         "name":"Ford Edge 2022",
@@ -47,7 +50,8 @@
         "mark": "Ford",
         "price":34490,
         "run":46000,
-        "id":4
+        "id":4,
+        "owner": "Person 4"
     },
     {
         "name":"Nissan Patrol 2011",
@@ -60,7 +64,8 @@
         "mark": "Nissan",
         "price":24500,
         "run":139000,
-        "id":5
+        "id":5,
+        "owner": "Person 5"
     },
     {
         "name":"Audi A8 2013",
@@ -73,7 +78,8 @@
         "mark": "Audi",
         "price":27250,
         "run":126000,
-        "id":6
+        "id":6,
+        "owner": "Person 6"
     },
 
 
@@ -92,7 +98,8 @@
         "mark": "Range Rover",
         "price":26000,
         "run":86000,
-        "id":7
+        "id":7,
+        "owner": "Person 7"
         },
     {
         "name":"Tesla Model S",
@@ -104,7 +111,8 @@
         "location":"Odessa",
         "mark": "Tesla",
         "price":56000,
-        "id":8
+        "id":8,
+        "owner": "Person 8"
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
@@ -116,7 +124,8 @@
         "location":"Kyiv",
         "mark": "Volkswagen",
         "price":29500,
-        "id":9
+        "id":9,
+        "owner": "Person 9"
     },
     {
         "name":"Ford Edge 2022",
@@ -129,7 +138,8 @@
         "mark": "Ford",
         "price":34490,
         "run":46000,
-        "id":10
+        "id":10,
+        "owner": "Person 10"
     },
     {
         "name":"Nissan Patrol 2011",
@@ -142,7 +152,8 @@
         "mark": "Nissan",
         "price":24500,
         "run":139000,
-        "id":11
+        "id":11,
+        "owner": "Person 11"
     },
     {
         "name":"Audi A8 2013",
@@ -155,6 +166,7 @@
         "mark": "Audi",
         "price":27250,
         "run":126000,
-        "id":12
+        "id":12,
+        "owner": "Person 12"
     }
 ]

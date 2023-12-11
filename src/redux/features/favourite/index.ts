@@ -15,6 +15,8 @@ const initialState: cartState = {
 // else {
   
 // }
+let test : any = Array([1,2,3,4,5])
+
 
 export const favourite  = createSlice({
 name: "cart",
@@ -30,8 +32,8 @@ name: "cart",
             state.fav_list.push(id)
           }
         })
-
-        console.log(state.fav_list)
+        localStorage.setItem("Test",test)
+        console.log(test)
     }
 }});
 

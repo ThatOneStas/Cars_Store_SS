@@ -22,7 +22,8 @@ interface Props {
     mark:string,
     price:number,
     run:number,
-    id:number
+    id:number,
+    owner: string
   }
 }
 

@@ -13,11 +13,31 @@ import Test from "@/assets/img(products)/land-rover_range-rover-evoque__52577103
 import Heart from "@/assets/img/heart_card.svg"
 // product list
 import Products_json from "@/modules/server/products/products.json"
+// swiper
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 const singleProduct = () => {
   const router = useRouter()
-  const URLdata = router.query
-  console.log(URLdata.name)
+  console.log(router.query)
+  const sliderSettings = {
+      slidesPerView: 1,
+      navigation: true,
+      loop: true,
+      spaceBetween: 6,
+      parallax: true,
+      allowTouchMove: true,
+      
+  }
+
   return (
     <>
       <Head>
@@ -28,9 +48,11 @@ const singleProduct = () => {
       </Head>
       <main>
         <section className={s.product}>
-          <div className={s.product__slider}>
-            <Image src={Test} alt="product-photo"></Image>
-          </div>
+          <Swiper className={s.product__slider} {...sliderSettings}>
+            <SwiperSlide><Image src={Test} alt="product-photo"></Image></SwiperSlide>
+            <SwiperSlide><Image src={Test} alt="product-photo"></Image></SwiperSlide>
+            <SwiperSlide><Image src={Test} alt="product-photo"></Image></SwiperSlide>
+          </Swiper>
           <div className={s.product__line}></div>
           <div className={s.product__info}>
             <h1>Name</h1>
