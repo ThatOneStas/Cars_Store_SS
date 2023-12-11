@@ -1,232 +1,114 @@
 @import "../../styles/variables.scss";
 
-@media (max-width: 2000px) {
-    .filter {
-        width: 100%;
-        padding: 0px 64px;
-        box-sizing: border-box;
-        height: fit-content;
+.filter {
+    width: 100%;
+    padding: 0px 82px;
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 44px;
+    &__box {
+        width: 45%;
+        height: 136px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: $--primary-0-color;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 44px;
-        &__box {
-            width: 722px;
-            height: 166px;
-            flex-shrink: 0;
-            border-radius: 10px;
-            background: $--primary-0-color;
+        flex-direction: column;
+        padding: 26px 4%;
+        box-sizing: border-box;
+        &_toggle {
             display: flex;
-            flex-direction: column;
-            padding: 26px 0px 0px 48px;
-            box-sizing: border-box;
-            &_toggle {
-                display: flex;
-                align-items: center;
-                margin-bottom: 16px;
-                column-gap: 8px;
-                & input {
-                    width: 20px;
-                    height: 20px;
-                    user-select: none;
-                    margin: 0;
-                    outline: none;
-                    user-select: none;
-                }
-                & label {
-                    color: $--secondary-color;
-
-                    /* Semibold/Type@16 */
-                    font-family: $--primary-font-family;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 150%; /* 24px */
-                    letter-spacing: -0.32px;
-                    margin: 0;
-                }
+            align-items: center;
+            margin-bottom: 16px;
+            column-gap: 8px;
+            & input {
+                width: 16px;
+                height: 16px;
+                user-select: none;
+                margin: 0;
+                outline: none;
+                user-select: none;
             }
-            &_row {
-                display: flex;
-                align-items: center;
-                column-gap: 24px;
-                &_line {
-                    width: 1px;
-                    height: 54px;
-                    background: rgba(195, 212, 233, 0.40);
-                    user-select: none;
-                }
-                &_select {
-                    width: 174px;
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 8px;
-                    & h2 {
-                        color: $--secondary-color;
+            & label {
+                color: $--secondary-color;
 
-                        /* Bold/Type@16 */
-                        font-family: $--primary-font-family;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: -0.32px;
-                        margin: 0;
-                        margin-left: 4px;
-                    }
-                    & select {
-                        text-align: start;
-                        width: 100%;
-                        border: none;
-                        color: $--secondary-0-color;
-
-                        /* Medium/Type@12 */
-                        font-family: $--primary-font-family;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-                        letter-spacing: -0.24px;
-                        padding-right: 8px;
-                    }
-                }
+                /* Semibold/Type@16 */
+                font-family: $--primary-font-family;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 24px */
+                letter-spacing: -0.32px;
+                margin: 0;
             }
         }
-        &__btn {
-            width: 72px;
-            height: 72px;
-            flex-shrink: 0;
-            border-radius: 10px;
-            background: $--primary-color;
-            border: none;
-            transition: 0.2s;
-            cursor: pointer;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-            &:hover {
-                background: #2e53c1;
-            }
-            & img {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-
-}
-
-
-@media (max-width: 1600px) {
-    .filter {
-        width: 100%;
-        padding: 0px 64px;
-        box-sizing: border-box;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 44px;
-        &__box {
-            width: 582px;
-            height: 136px;
-            flex-shrink: 0;
-            border-radius: 10px;
-            background: $--primary-0-color;
+        &_row {
             display: flex;
-            flex-direction: column;
-            padding: 26px 0px 0px 48px;
-            box-sizing: border-box;
-            &_toggle {
+            align-items: center;
+            column-gap: 24px;
+            &_line {
+                width: 1px;
+                height: 48px;
+                background: rgba(195, 212, 233, 0.40);
+                user-select: none;
+            }
+            &_select {
+                width: 134px;
                 display: flex;
-                align-items: center;
-                margin-bottom: 16px;
-                column-gap: 8px;
-                & input {
-                    width: 16px;
-                    height: 16px;
-                    user-select: none;
-                    margin: 0;
-                    outline: none;
-                    user-select: none;
-                }
-                & label {
+                flex-direction: column;
+                row-gap: 8px;
+                & h2 {
                     color: $--secondary-color;
 
-                    /* Semibold/Type@16 */
+                    /* Bold/Type@16 */
                     font-family: $--primary-font-family;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     line-height: 150%; /* 24px */
                     letter-spacing: -0.32px;
                     margin: 0;
+                    margin-left: 4px;
                 }
-            }
-            &_row {
-                display: flex;
-                align-items: center;
-                column-gap: 24px;
-                &_line {
-                    width: 1px;
-                    height: 48px;
-                    background: rgba(195, 212, 233, 0.40);
-                    user-select: none;
-                }
-                &_select {
-                    width: 134px;
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 8px;
-                    & h2 {
-                        color: $--secondary-color;
+                & select {
+                    text-align: start;
+                    width: 100%;
+                    border: none;
+                    color: $--secondary-0-color;
 
-                        /* Bold/Type@16 */
-                        font-family: $--primary-font-family;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: -0.32px;
-                        margin: 0;
-                        margin-left: 4px;
-                    }
-                    & select {
-                        text-align: start;
-                        width: 100%;
-                        border: none;
-                        color: $--secondary-0-color;
-
-                        /* Medium/Type@12 */
-                        font-family: $--primary-font-family;
-                        font-size: 12px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-                        letter-spacing: -0.24px;
-                        padding-right: 8px;
-                    }
+                    /* Medium/Type@12 */
+                    font-family: $--primary-font-family;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: -0.24px;
+                    padding-right: 8px;
                 }
-            }
-        }
-        &__btn {
-            width: 60px;
-            height: 60px;
-            flex-shrink: 0;
-            border-radius: 10px;
-            background: $--primary-color;
-            border: none;
-            transition: 0.2s;
-            cursor: pointer;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-            &:hover {
-                background: #2e53c1;
-            }
-            & img {
-                width: 24px;
-                height: 24px;
             }
         }
     }
-
+    &__btn {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: $--primary-color;
+        border: none;
+        transition: 0.2s;
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        &:hover {
+            background: #2e53c1;
+        }
+        & img {
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
 
 @media (max-width: 391px) {

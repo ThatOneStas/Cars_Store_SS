@@ -20,19 +20,19 @@ const Footer = () => {
           <div className={`${s.footer__main_box}`}>
             <h1>About</h1>
             <ul>
-              <li><Link href={"/"}>How it works</Link></li>
-              <li><Link href={"/"}>Featured</Link></li>
-              <li><Link href={"/"}>Partnership</Link></li>
-              <li><Link href={"/"}>Bussiness Relation</Link></li>
+              <li><Link href={"/zaglushka"}>How it works</Link></li>
+              <li><Link href={"/zaglushka"}>Featured</Link></li>
+              <li><Link href={"/zaglushka"}>Partnership</Link></li>
+              <li><Link href={"/zaglushka"}>Bussiness Relation</Link></li>
             </ul>
           </div>
             <div className={`${s.footer__main_box}`}>
               <h1>Community</h1>
               <ul>
-                <li><Link href={"/"}>Events</Link></li>
-                <li><Link href={"/"}>Blog</Link></li>
-                <li><Link href={"/"}>Podcast</Link></li>
-                <li><Link href={"/"}>Invite a friend</Link></li>
+                <li><Link href={"/zaglushka"}>Events</Link></li>
+                <li><Link href={"/zaglushka"}>Blog</Link></li>
+                <li><Link href={"/zaglushka"}>Podcast</Link></li>
+                <li><Link href={"/zaglushka"}>Invite a friend</Link></li>
               </ul>
             </div>
             <div className={`${s.footer__main_box}`}>
@@ -49,8 +49,8 @@ const Footer = () => {
         <div className={s.footer__line}></div>
         <div className={s.footer__sub}>
           <h2>©2022 MORENT. All rights reserved</h2>
-          <Link href={"/"}><h2>Privacy & Policy</h2></Link>
-          <Link href={"/"}><h2>Terms & Condition</h2></Link>
+          <Link href={"/zaglushka"}><h2>Privacy & Policy</h2></Link>
+          <Link href={"/zaglushka"}><h2>Terms & Condition</h2></Link>
         </div>
       </footer>
     </>

@@ -186,5 +186,96 @@
         "run":126000,
         "id":12,
         "owner": "Person 12"
+    },
+    {
+        "name":"Land Rover Range Rover Evoque 2016",
+        "photos":[
+            "https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771031f.webp",
+            "https://cdn1.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771011f.webp",
+            "https://cdn3.riastatic.com/photosnew/auto/photo/land-rover_range-rover-evoque__525771033f.webp"
+        ],
+        "location":"Lviv",
+        "mark": "Range Rover",
+        "price":26000,
+        "run":86000,
+        "id":13,
+        "owner": "Person 13"
+        },
+    {
+        "name":"Tesla Model S 2017",
+        "photos":[
+            "https://cdn0.riastatic.com/photosnew/auto/photo/tesla_model-s__516863775f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/tesla_model-s__516863777f.webp",
+            "https://cdn1.riastatic.com/photosnew/auto/photo/tesla_model-s__516864041f.webp",
+            "https://cdn0.riastatic.com/photosnew/auto/photo/tesla_model-s__516863780f.webp"
+        ],
+        "location":"Odessa",
+        "mark": "Tesla",
+        "price":56000,
+        "id":14,
+        "owner": "Person 14"
+    },
+    {
+        "name":"Volkswagen ID.4 Crozz 2023",
+        "photos":[
+            "https://cdn2.riastatic.com/photosnew/auto/photo/volkswagen_id-4-crozz__527254057f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/volkswagen_id-4-crozz__527254052f.webp",
+            "https://cdn1.riastatic.com/photosnew/auto/photo/volkswagen_id-4-crozz__527254056f.webp",
+            "https://cdn1.riastatic.com/photosnew/auto/photo/volkswagen_id-4-crozz__527254061f.webp",
+            "https://cdn0.riastatic.com/photosnew/auto/photo/volkswagen_id-4-crozz__527254075f.webp"
+        ],
+        "location":"Kyiv",
+        "mark": "Volkswagen",
+        "price":29500,
+        "id":15,
+        "owner": "Person 15"
+    },
+    {
+        "name":"Ford Edge 2022",
+        "photos":[
+            "https://cdn4.riastatic.com/photosnew/auto/photo/ford_edge__525610989f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/ford_edge__525610677f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/ford_edge__525610857f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/ford_edge__525610872f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/ford_edge__525611077f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/ford_edge__525611357f.webp",
+            "https://cdn4.riastatic.com/photosnew/auto/photo/ford_edge__525611469f.webp"
+        ],
+        "location":"Kyiv",
+        "mark": "Ford",
+        "price":34490,
+        "run":46000,
+        "id":16,
+        "owner": "Person 16"
+    },
+    {
+        "name":"Nissan Patrol 2011",
+        "photos":[
+            "https://cdn0.riastatic.com/photosnew/auto/photo/nissan_patrol__526339795f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/nissan_patrol__526339792f.webp",
+            "https://cdn3.riastatic.com/photosnew/auto/photo/nissan_patrol__526339793f.webp"
+        ],
+        "location":"Lutsk",
+        "mark": "Nissan",
+        "price":24500,
+        "run":139000,
+        "id":17,
+        "owner": "Person 17"
+    },
+    {
+        "name":"Audi A8 2013",
+        "photos":[
+            "https://cdn2.riastatic.com/photosnew/auto/photo/audi_a8__525687502f.webp",
+            "https://cdn2.riastatic.com/photosnew/auto/photo/audi_a8__525687507f.webp",
+            "https://cdn0.riastatic.com/photosnew/auto/photo/audi_a8__525687505f.webp",
+            "https://cdn4.riastatic.com/photosnew/auto/photo/audi_a8__525687504f.webp",
+            "https://cdn4.riastatic.com/photosnew/auto/photo/audi_a8__525687519f.webp"
+        ],
+        "location":"Kyiv",
+        "mark": "Audi",
+        "price":27250,
+        "run":126000,
+        "id":18,
+        "owner": "Person 18"
     }
 ]

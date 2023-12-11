@@ -42,7 +42,7 @@ export default function Home() {
         <section className={s.list}>
           <div className={s.list__top}>
             <h1>Popular</h1>
-            <Link href={"/"}>View all</Link>
+            <Link href={"/product"}>View all</Link>
           </div>
           {
             Products_json.length > 0 ? <div className={s.list__items}>{Products_json.map((product:any)=>{

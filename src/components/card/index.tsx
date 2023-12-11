@@ -5,13 +5,13 @@ import Link from "next/link";
 // images
 import Image from "next/image";
 import Location from "@/assets/img/Location.png";
-import Test from "@/assets/img(products)/land-rover_range-rover-evoque__525771031f(1).png";
 import Heart from "@/assets/img/heart_card.svg";
 // redux
 import { useSelector, useDispatch } from "react-redux";
 import { changeFavoriteList } from "@/redux/features/favourite";
 // product list
-import Products_json from "@/modules/server/products/products.json";
+import Products_json from "@/modules/server/products/products_all.json";
+// interface
 import { CardItem } from "@/interfaces";
 
 interface Props {
@@ -32,14 +32,14 @@ const card = ({ product_data }: Props) => {
 
   return (
     <div className={s.card}>
-      <Image
+      <Link href={`/product/${product_data.id}`}><Image
         className={s.card__img}
         src={product_data.photos[0]}
         alt="product-photo"
         width={10}
         height={10}
         unoptimized
-      ></Image>
+      ></Image></Link>
       <div className={s.card__line}></div>
       <div className={s.card__info}>
         <h1>{product_data.name}</h1>
@@ -51,10 +51,9 @@ const card = ({ product_data }: Props) => {
         <span>{product_data.price} $</span>
       </div>
       <div className={s.card__detail}>
-        {/* <Link href={{ pathname: "/product/", query: { object: JSON.stringify(product_data) } }}>Detail</Link> */}
         <Link href={`/product/${product_data.id}`}>Detail</Link>
         <Image
-          onClick={() => dispatch(changeFavoriteList(product_data.id))}
+          onClick={() => dispatch(changeFavoriteList((product_data.id)))}
           src={Heart}
           alt="heart-icon"
           className={isFav ? "active" : ""}

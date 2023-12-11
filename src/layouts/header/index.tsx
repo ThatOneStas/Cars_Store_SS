@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from "react";
 import s from "./header.module.scss"
 // link
 import Link from 'next/link'
@@ -10,9 +10,21 @@ import Settings from "@/assets/img/setting-2.svg"
 import User from "@/assets/img/frame.svg"
 import Search from "@/assets/img/search-normal.svg"
 import Filter from "@/assets/img/filter.svg"
+// redux 
+import { useSelector } from "react-redux";
+
 
 
 const header = () => {
+  const favList = useSelector((state: any) => state.favourite.fav_list);
+
+  const isActive = useMemo(() => {
+    if (favList[0]) {
+      return true;
+    } else {
+      return false;
+    }
+  }, [favList]);
   return (
     <header className={s.header}>
       <Link className={s.header__logo} href={"/"}>
@@ -27,21 +39,22 @@ const header = () => {
         <ul>
           <li className={s.fav}>
             <Link href={"/favourite"}>
+              <div className={isActive ? "active" : ""}></div>
               <Image src={Heart} alt='heart-icon'></Image>
             </Link>
           </li>
           <li className={s.notif}>
-            <Link href={"/"}>
+            <Link href={"/zaglushka"}>
               <Image src={Bell} alt='Bell-icon'></Image>
             </Link>
           </li>
           <li className={s.setting}>
-            <Link href={"/"}>
+            <Link href={"/zaglushka"}>
               <Image src={Settings} alt='Settings-icon'></Image>
             </Link>
           </li>
           <li className={s.user}>
-            <Link href={"/"}>
+            <Link href={"/zaglushka"}>
               <Image className={s.header__nav_userImg} src={User} alt='Profile-icon'></Image>
             </Link>
           </li>

@@ -9,18 +9,13 @@ import Link from 'next/link'
 // images
 import Image from 'next/image'
 // product list
-import Products_json from "@/modules/server/products/products.json"
+import Products_json from "@/modules/server/products/products_all.json"
 // redux
-import redux from "@/redux/features/favourite"
+import { useSelector } from "react-redux";
+
 
 const favourite = () => {
-  if (typeof window !== 'undefined') {
-
-    let list = [localStorage.getItem("Test")]
-    list.map((id : any)=>{
-      console.log(id)
-    })
-  }
+  const favList = useSelector((state: any) => state.favourite.fav_list);
   return (
     <>
       <Head>
@@ -29,8 +24,29 @@ const favourite = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        
+      <main className={s.main}>
+        <Filter></Filter>
+        {/* <section className={s.filter}>
+          <input type="text" />
+        </section> */}
+        <section className={s.list}>
+          <div className={s.list__top}>
+            <h1>Favourite</h1>
+            <Link href={"/product"}>View all</Link>
+          </div>
+          {
+            favList.length > 0 ? <div className={s.list__items}>{Products_json.map((product:any)=>{
+              if(favList.indexOf(product.id)>=0){
+                return(
+                  <Card key={product.id} product_data={product}></Card>
+                )
+              }
+            })}</div> : <div className={s.list__error}>No favourite yet.</div>
+          }
+          <div className={s.list__bottom}>
+            <h2>{favList.length ? `${favList.length} Cars` : `Zero`}</h2>
+          </div>
+        </section>
       </main>
     </>
   )
