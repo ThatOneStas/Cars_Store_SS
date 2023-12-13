@@ -105,7 +105,7 @@ const singleProduct = () => {
               onClick={() => dispatch(changeFavoriteList(Number(router.query.id)))}
               src={Heart}
               alt="heart-icon"
-              className={`${s.product__info_fav} ${isFav ? `${s.active} ` : ""}`}
+              className={`${s.product__info_fav} ${isFav ? `${s.active}` : ""}`}
             ></Image>
           </div>
         </section>

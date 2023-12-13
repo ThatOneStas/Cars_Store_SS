@@ -56,7 +56,7 @@ const card = ({ product_data }: Props) => {
           onClick={() => dispatch(changeFavoriteList((product_data.id)))}
           src={Heart}
           alt="heart-icon"
-          className={isFav ? `${s.active} `: ""}
+          className={isFav ? `${s.active}` : ""}
         ></Image>
       </div>
     </div>
