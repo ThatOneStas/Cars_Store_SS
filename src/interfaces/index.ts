@@ -7,4 +7,5 @@ export interface CardItem {
   run: number;
   id: number | string;
   owner: string;
+  links: string[];
 }

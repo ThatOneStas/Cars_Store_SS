@@ -137,6 +137,258 @@
     }
 }
 
+@media (max-width: 2301px) {
+    .footer {
+        padding: 80px 82px 60px 82px;
+        &__main {
+            &_logo {
+                width: 292px;
+                row-gap: 16px;
+                & a {
+                    & h1 {
+                        font-size: 36px;
+                    }
+                }
+                & h2 {
+                    font-size: 20px;
+                }
+            }
+            &_box {
+                margin-left: 120px;
+                width: fit-content;
+                height: fit-content;
+                & h1 {
+                    font-size: 24px;
+                    margin-bottom: 24px;
+                }
+                & ul {
+                    row-gap: 20px;
+                    & li {
+                        & a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            & .about {
+                margin-left: auto;
+            }
+            & .community,.socials {
+                margin-left: 60px;
+            }
+        }
+        &__line {
+            margin: 36px 0px;
+        }
+        &__sub {
+            display: flex;
+            & h2 {
+                font-size: 20px;
+            }
+            & a {
+                & h2 {
+                    font-size: 20px;
+                }
+            }
+            & :nth-child(2){
+                margin-left: auto;
+            }
+            & :nth-child(3){
+                margin-left: 60px;
+            }
+        }
+    }  
+}
+
+@media (max-width: 1601px) {
+    .footer {
+        padding: 80px 82px 60px 82px;
+        &__main {
+            &_logo {
+                width: 292px;
+                row-gap: 16px;
+                & a {
+                    & h1 {
+                        font-size: 32px;
+                    }
+                }
+                & h2 {
+                    font-size: 16px;
+                }
+            }
+            &_box {
+                margin-left: 60px;
+                width: 152px;
+                height: fit-content;
+                & h1 {
+                    font-size: 20px;
+                    margin-bottom: 24px;
+                }
+                & ul {
+                    row-gap: 20px;
+                    & li {
+                        & a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            & .about {
+                margin-left: auto;
+            }
+            & .community,.socials {
+                margin-left: 60px;
+            }
+        }
+        &__line {
+            margin: 36px 0px;
+        }
+        &__sub {
+            display: flex;
+            & h2 {
+                font-size: 16px;
+            }
+            & a {
+                & h2 {
+                    font-size: 16px;
+                }
+            }
+            & :nth-child(2){
+                margin-left: auto;
+            }
+            & :nth-child(3){
+                margin-left: 60px;
+            }
+        }
+    }  
+}
+
+@media (max-width: 1001px) {
+    .footer {
+        padding: 80px 82px 60px 82px;
+        &__main {
+            &_logo {
+                width: 222px;
+                row-gap: 16px;
+                & a {
+                    & h1 {
+                        font-size: 28px;
+                    }
+                }
+                & h2 {
+                    font-size: 12px;
+                }
+            }
+            &_box {
+                margin-left: 60px;
+                width: fit-content;
+                height: fit-content;
+                & h1 {
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+                & ul {
+                    row-gap: 16px;
+                    & li {
+                        & a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            & .about {
+                margin-left: auto;
+            }
+            & .community,.socials {
+                margin-left: 60px;
+            }
+        }
+        &__line {
+            margin: 36px 0px;
+        }
+        &__sub {
+            display: flex;
+            & h2 {
+                font-size: 12px;
+            }
+            & a {
+                & h2 {
+                    font-size: 12px;
+                }
+            }
+            & :nth-child(2){
+                margin-left: auto;
+            }
+            & :nth-child(3){
+                margin-left: 60px;
+            }
+        }
+    }  
+}
+
+@media (max-width: 801px) {
+    .footer {
+        padding: 80px 82px 60px 82px;
+        &__main {
+            &_logo {
+                width: 222px;
+                row-gap: 16px;
+                & a {
+                    & h1 {
+                        font-size: 24px;
+                    }
+                }
+                & h2 {
+                    font-size: 12px;
+                }
+            }
+            &_box {
+                margin-left: 40px;
+                width: fit-content;
+                height: fit-content;
+                & h1 {
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+                & ul {
+                    row-gap: 16px;
+                    & li {
+                        & a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            & .about {
+                margin-left: auto;
+            }
+            & .community,.socials {
+                margin-left: 60px;
+            }
+        }
+        &__line {
+            margin: 36px 0px;
+        }
+        &__sub {
+            display: flex;
+            & h2 {
+                font-size: 12px;
+            }
+            & a {
+                & h2 {
+                    font-size: 12px;
+                }
+            }
+            & :nth-child(2){
+                margin-left: auto;
+            }
+            & :nth-child(3){
+                margin-left: 60px;
+            }
+        }
+    }  
+}
+
 @media (max-width: 391px) {
     .footer {
         background-color: #F6F7F9;

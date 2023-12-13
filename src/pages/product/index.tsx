@@ -10,9 +10,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 // product list
 import Products_json_all from "@/modules/server/products/products_all.json"
+import Marks from "@/modules/server/products/marks.json"
 
 
 export default function Home() {
+  
   return (
     <>
       <Head>
@@ -25,6 +27,16 @@ export default function Home() {
         <Filter></Filter>
         <section className={s.filter}>
           <input type="text" />
+          <select name="" id="">
+            <option value="All">All</option>
+            {
+              Marks.map((obj:any)=>{
+                return(
+                  <option value={obj.mark}>{obj.mark}</option>
+                )
+              })
+            }
+          </select>
         </section>
         <section className={s.list}>
           <div className={s.list__top}>

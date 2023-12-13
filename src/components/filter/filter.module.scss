@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 44px;
     &__box {
         width: 45%;
         height: 136px;
@@ -92,6 +91,7 @@
         }
     }
     &__btn {
+        z-index: 99;
         width: 60px;
         height: 60px;
         flex-shrink: 0;
@@ -107,6 +107,321 @@
         & img {
             width: 24px;
             height: 24px;
+        }
+    }
+}
+
+@media (max-width:2301px) {
+    .filter {
+        width: 100%;
+        padding: 0px 82px;
+        box-sizing: border-box;
+        &__box {
+            width: 45%;
+            height: fit-content;
+            padding: 26px 4%;
+            box-sizing: border-box;
+            &_toggle {
+                margin-bottom: 16px;
+                column-gap: 12px;
+                & input {
+                    width: 24px;
+                    height: 24px;
+                }
+                & label {
+                    font-size: 24px;
+                }
+            }
+            &_row {
+                column-gap: 24px;
+                &_line {
+                    width: 1px;
+                    height: 48px;
+                }
+                &_select {
+                    width: 214px;
+                    row-gap: 8px;
+                    & h2 {
+                        font-size: 24px;
+                        margin-left: 4px;
+                    }
+                    & select {
+                        width: 100%;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 80px;
+            height: 80px;
+            & img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width:2001px) {
+    .filter {
+        width: 100%;
+        padding: 0px 82px;
+        box-sizing: border-box;
+        &__box {
+            width: 45%;
+            height: fit-content;
+            padding: 26px 4%;
+            box-sizing: border-box;
+            &_toggle {
+                margin-bottom: 16px;
+                column-gap: 12px;
+                & input {
+                    width: 20px;
+                    height: 20px;
+                }
+                & label {
+                    font-size: 20px;
+                }
+            }
+            &_row {
+                column-gap: 16px;
+                &_line {
+                    width: 1px;
+                    height: 48px;
+                }
+                &_select {
+                    width: 204px;
+                    row-gap: 8px;
+                    & h2 {
+                        font-size: 20px;
+                        margin-left: 4px;
+                    }
+                    & select {
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 70px;
+            height: 70px;
+            & img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width:1601px) {
+    .filter {
+        width: 100%;
+        padding: 0px 82px;
+        box-sizing: border-box;
+        &__box {
+            width: 45%;
+            height: 136px;
+            padding: 26px 4%;
+            box-sizing: border-box;
+            &_toggle {
+                margin-bottom: 16px;
+                column-gap: 8px;
+                & input {
+                    width: 16px;
+                    height: 16px;
+                }
+                & label {
+                    font-size: 16px;
+                }
+            }
+            &_row {
+                column-gap: 24px;
+                &_line {
+                    width: 1px;
+                    height: 48px;
+                }
+                &_select {
+                    width: 134px;
+                    row-gap: 8px;
+                    & h2 {
+                        font-size: 16px;
+                        margin-left: 4px;
+                    }
+                    & select {
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 60px;
+            height: 60px;
+            & img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:1451px) {
+    .filter {
+        width: 100%;
+        padding: 0px 82px;
+        box-sizing: border-box;
+        &__box {
+            width: 45%;
+            height: 136px;
+            padding: 26px 4%;
+            box-sizing: border-box;
+            &_toggle {
+                margin-bottom: 16px;
+                column-gap: 8px;
+                & input {
+                    width: 16px;
+                    height: 16px;
+                }
+                & label {
+                    font-size: 16px;
+                }
+            }
+            &_row {
+                column-gap: 16px;
+                &_line {
+                    width: 1px;
+                    height: 48px;
+                }
+                &_select {
+                    width: 134px;
+                    row-gap: 8px;
+                    & h2 {
+                        font-size: 16px;
+                        margin-left: 4px;
+                    }
+                    & select {
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 60px;
+            height: 60px;
+            & img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:1251px) {
+    .filter {
+        width: 100%;
+        padding: 0px 82px;
+        box-sizing: border-box;
+        &__box {
+            width: 45%;
+            height: 136px;
+            padding: 26px 2%;
+            box-sizing: border-box;
+            &_toggle {
+                margin-bottom: 16px;
+                column-gap: 8px;
+                & input {
+                    width: 14px;
+                    height: 14px;
+                }
+                & label {
+                    font-size: 14px;
+                }
+            }
+            &_row {
+                column-gap: 12px;
+                &_line {
+                    width: 1px;
+                    height: 48px;
+                }
+                &_select {
+                    width: 134px;
+                    row-gap: 8px;
+                    & h2 {
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                    & select {
+                        width: 100%;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            width: 60px;
+            height: 60px;
+            & img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:1001px) {
+    .filter {
+        width: 100%;
+        padding: 0px 82px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        &__box {
+            width: 100%;
+            height: 136px;
+            padding: 26px 6%;
+            box-sizing: border-box;
+            &_toggle {
+                margin-bottom: 16px;
+                column-gap: 8px;
+                & input {
+                    width: 14px;
+                    height: 14px;
+                }
+                & label {
+                    font-size: 14px;
+                }
+            }
+            &_row {
+                column-gap: 32px;
+                &_line {
+                    width: 1px;
+                    height: 48px;
+                }
+                &_select {
+                    width: 134px;
+                    row-gap: 8px;
+                    & h2 {
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                    & select {
+                        width: 100%;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &__btn {
+            margin: -10px 0px;
+            width: 60px;
+            height: 60px;
+            & img {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }
@@ -214,7 +529,6 @@
             border: none;
             transition: 0.2s;
             cursor: pointer;
-            z-index: 99;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
             &:hover {
                 background: #2e53c1;

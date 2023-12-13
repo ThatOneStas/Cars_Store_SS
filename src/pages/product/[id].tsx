@@ -15,18 +15,16 @@ import Heart from "@/assets/img/heart_card.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { changeFavoriteList } from "@/redux/features/favourite";
 // product list
-import Products_json from "@/modules/server/products/products_all.json";
+import Products_json from "@/modules/server/products/products.json";
+import Products_json_all from "@/modules/server/products/products_all.json";
 // swiper
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import filter from "@/components/filter";
 // interface
 import { CardItem } from "@/interfaces";
 
@@ -37,7 +35,7 @@ const singleProduct = () => {
   useEffect(() => {
     const ID = router.query.id;
     if (ID) {
-      const CAR_DATA = data.filter((el: { id: number | string }) => {
+      const CAR_DATA = Products_json_all.filter((el: { id: number | string }) => {
         if (el.id == ID) {
           return el;
         }
@@ -45,10 +43,14 @@ const singleProduct = () => {
       setCar(CAR_DATA[0]);
     }
   }, [router.query.id]);
+  console.log(router.query)
 
   const sliderSettings = {
+    modules:[Navigation, Pagination, Scrollbar, A11y],
+    speed: 200,
     slidesPerView: 1,
     navigation: true,
+    pagination: { clickable: true },
     loop: true,
     spaceBetween: 6,
     parallax: true,
@@ -59,12 +61,14 @@ const singleProduct = () => {
   const favList = useSelector((state: any) => state.favourite.fav_list);
 
   const isFav = useMemo(() => {
-    if (favList.indexOf(router.query.id) >= 0) {
+    if (favList.indexOf(Number(router.query.id)) >= 0) {
       return true;
     } else {
       return false;
     }
   }, [favList]);
+
+
 
   return (
     <>
@@ -96,19 +100,19 @@ const singleProduct = () => {
             </div>
             <h2>{car?.run ? `Run: ${car?.run}` : 'No run.'}</h2>
             <span>{car?.price} $</span>
-            <Link href={`/cta`}>Msg owner</Link>
+            <Link href={`/cta?id=${car?.id}`}>Msg owner</Link>
             <Image
               onClick={() => dispatch(changeFavoriteList(Number(router.query.id)))}
               src={Heart}
               alt="heart-icon"
-              className={`${s.product__info_fav} ${isFav ? "active" : ""}`}
+              className={`${s.product__info_fav} ${isFav ? `${s.active} ` : ""}`}
             ></Image>
           </div>
         </section>
         <section className={s.list}>
           <div className={s.list__top}>
             <h1>Similar</h1>
-            <Link href={"/"}>View all</Link>
+            <Link href={"/product"}>View all</Link>
           </div>
           {Products_json.length > 0 ? (
             <div className={s.list__items}>

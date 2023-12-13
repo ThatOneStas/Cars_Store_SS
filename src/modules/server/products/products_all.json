@@ -11,7 +11,8 @@
         "price":26000,
         "run":86000,
         "id":1,
-        "owner": "Person 1"
+        "owner": "Person 1",
+        "links":["Facebook","Instagram","Telegram"]
         },
     {
         "name":"Tesla Model S 2017",
@@ -25,7 +26,8 @@
         "mark": "Tesla",
         "price":56000,
         "id":2,
-        "owner": "Person 2"
+        "owner": "Person 2",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
@@ -40,7 +42,8 @@
         "mark": "Volkswagen",
         "price":29500,
         "id":3,
-        "owner": "Person 3"
+        "owner": "Person 3",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Ford Edge 2022",
@@ -58,7 +61,8 @@
         "price":34490,
         "run":46000,
         "id":4,
-        "owner": "Person 4"
+        "owner": "Person 4",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Nissan Patrol 2011",
@@ -72,7 +76,8 @@
         "price":24500,
         "run":139000,
         "id":5,
-        "owner": "Person 5"
+        "owner": "Person 5",
+        "links":["Facebook","Instagram"]
     },
     {
         "name":"Audi A8 2013",
@@ -108,7 +113,8 @@
         "price":26000,
         "run":86000,
         "id":7,
-        "owner": "Person 7"
+        "owner": "Person 7",
+        "links":["Facebook","Instagram","Telegram"]
         },
     {
         "name":"Tesla Model S 2017",
@@ -122,7 +128,8 @@
         "mark": "Tesla",
         "price":56000,
         "id":8,
-        "owner": "Person 8"
+        "owner": "Person 8",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
@@ -137,7 +144,8 @@
         "mark": "Volkswagen",
         "price":29500,
         "id":9,
-        "owner": "Person 9"
+        "owner": "Person 9",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Ford Edge 2022",
@@ -155,7 +163,8 @@
         "price":34490,
         "run":46000,
         "id":10,
-        "owner": "Person 10"
+        "owner": "Person 10",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Nissan Patrol 2011",
@@ -169,7 +178,8 @@
         "price":24500,
         "run":139000,
         "id":11,
-        "owner": "Person 11"
+        "owner": "Person 11",
+        "links":["Facebook","Instagram"]
     },
     {
         "name":"Audi A8 2013",
@@ -199,7 +209,8 @@
         "price":26000,
         "run":86000,
         "id":13,
-        "owner": "Person 13"
+        "owner": "Person 13",
+        "links":["Facebook","Instagram","Telegram"]
         },
     {
         "name":"Tesla Model S 2017",
@@ -213,7 +224,8 @@
         "mark": "Tesla",
         "price":56000,
         "id":14,
-        "owner": "Person 14"
+        "owner": "Person 14",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Volkswagen ID.4 Crozz 2023",
@@ -228,7 +240,8 @@
         "mark": "Volkswagen",
         "price":29500,
         "id":15,
-        "owner": "Person 15"
+        "owner": "Person 15",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Ford Edge 2022",
@@ -246,7 +259,8 @@
         "price":34490,
         "run":46000,
         "id":16,
-        "owner": "Person 16"
+        "owner": "Person 16",
+        "links":["Facebook","Instagram","Telegram"]
     },
     {
         "name":"Nissan Patrol 2011",
@@ -260,7 +274,8 @@
         "price":24500,
         "run":139000,
         "id":17,
-        "owner": "Person 17"
+        "owner": "Person 17",
+        "links":["Facebook","Instagram"]
     },
     {
         "name":"Audi A8 2013",

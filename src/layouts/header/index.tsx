@@ -39,7 +39,7 @@ const header = () => {
         <ul>
           <li className={s.fav}>
             <Link href={"/favourite"}>
-              <div className={isActive ? "active" : ""}></div>
+              <div className={isActive ? `${s.active}` : ""}></div>
               <Image src={Heart} alt='heart-icon'></Image>
             </Link>
           </li>
