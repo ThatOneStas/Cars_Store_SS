@@ -28,11 +28,11 @@ export default function Home() {
         <section className={s.filter}>
           <input type="text" />
           <select name="" id="">
-            <option value="All">All</option>
+            <option key={"option"} value="All">All</option>
             {
               Marks.map((obj:any)=>{
                 return(
-                  <option value={obj.mark}>{obj.mark}</option>
+                  <option key={"option"} value={obj.mark}>{obj.mark}</option>
                 )
               })
             }
