@@ -83,7 +83,7 @@ const singleProduct = () => {
           <Swiper className={s.product__slider} {...sliderSettings}>
             {car?.photos.map(( photo : string )=>{
               return (
-              <SwiperSlide>
+              <SwiperSlide key={"swiper"}>
                 <Image src={photo} alt="product-photo"
                   width={10}
                   height={10}

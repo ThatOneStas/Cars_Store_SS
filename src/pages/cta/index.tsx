@@ -32,11 +32,9 @@ const cta = () => {
     }
   }, [router.query.id]);
   
-  const Form = () => {
-    const [Form_data, setForm_data] = useState<any>({
-      msg: "",
-    })
-  }
+  const [Form_data, setForm_data] = useState<any>({
+    msg: "",
+  })
 
   const [msg, setMsg] = useState<any>("")
 
@@ -86,7 +84,7 @@ const cta = () => {
               <Link href={`/product/${car?.id}`}>Back to Car</Link>
             </div>
             <div className={s.form__textarea}>
-              <textarea maxLength={300} placeholder='Your text here..'></textarea>
+              <textarea maxLength={300} placeholder='Your text here..' value={Form_data.msg} name="textarea" onChange={(e) => setForm_data({...Form_data, title: e.target.value})} ></textarea>
               <input type="submit" value="Send" />
             </div>
           </form>
@@ -96,6 +94,6 @@ const cta = () => {
   )
 }
 
-// value={Form_data.msg} name="textarea" onChange={(e)=>{setFormData<any>({...Form_data, msg: e.target.value})}} 
+
 
 export default cta
